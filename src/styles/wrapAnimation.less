@@ -1,0 +1,59 @@
+.slide-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 800ms ease-out;
+}
+
+.slide-exit {
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+.slide-exit-active {
+  opacity: 1;
+  transition: all 800ms ease-out;
+}
+
+.fadeRA-enter {
+  opacity: 0;
+}
+
+.fadeRA-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-out;
+}
+
+.fadeRA-exit {
+  opacity: 1;
+}
+
+.fadeRA-exit-active {
+  opacity: 0;
+  transition: opacity 800ms ease-out;
+}
+
+.shrink-enter {
+  opacity: 0;
+  transform: translate3d(50px, 15px, -50px);
+}
+
+.shrink-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 500ms ease-out;
+}
+
+.shrink-exit {
+  opacity: 1;
+}
+
+.shrink-exit-active {
+  opacity: 0;
+  transform: translate3d(50px, 15px, -50px);
+  transition: all 500ms ease-out;
+}

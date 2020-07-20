@@ -1,0 +1,214 @@
+:root {
+  // cover slider component style
+  .ant-slider-dot-active {
+    border-color: var(--antd-slider-active) !important;
+  }
+
+  .ant-slider-handle:focus {
+    border-color: var(--antd-slider-focus);
+    box-shadow: 0 0 0 5px var(--antd-slider-focus-shadow);
+  }
+
+  .ant-slider-handle-dragging.ant-slider-handle-dragging.ant-slider-handle-dragging {
+    border-color: var(--antd-slider-focus) !important;
+    box-shadow: 0 0 0 5px var(--antd-slider-focus-shadow);
+  }
+
+  // cover component focused style
+  .ant-picker-focused,
+  .ant-select-focused.ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within,
+  .ant-radio-input:focus + .ant-radio-inner,
+  .ant-select-focused.ant-select-multiple .ant-select-selector,
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused,
+  .ant-input:focus,
+  .ant-input-focused,
+  .ant-input-number:focus,
+  .ant-input-number-focused,
+  .ant-cascader-picker:focus .ant-cascader-input {
+    box-shadow: 0 0 0 2px var(--antd-select-focus-shadow);
+  }
+
+  // cover picker component style
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end:not(.ant-picker-cell-in-range):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end)::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start.ant-picker-cell-range-start-single::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end.ant-picker-cell-range-end-single::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover:not(.ant-picker-cell-in-range)::after {
+    border-top: 1px dashed var(--primary-lightener);
+    border-bottom: 1px dashed var(--primary-lightener);
+  }
+
+  tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover:last-child::after,
+  tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-edge-end:not(.ant-picker-cell-range-hover-edge-end-near-range)::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end::after {
+    border-right: 1px dashed var(--primary-lightener);
+  }
+
+  tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover:first-child::after,
+  tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-end:first-child::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-edge-start:not(.ant-picker-cell-range-hover-edge-start-near-range)::after,
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start::after {
+    border-left: 1px dashed var(--primary-lightener);
+  }
+
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+    .ant-picker-cell-inner::after,
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+    .ant-picker-cell-inner::after {
+    background: var(--primary-lighten-extra);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before,
+  .ant-picker-panel
+    > :not(.ant-picker-date-panel)
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+  .ant-picker-panel
+    > :not(.ant-picker-date-panel)
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before,
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+    .ant-picker-cell-inner::after,
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+    .ant-picker-cell-inner::after {
+    background-color: var(--primary-2);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+    background-color: var(--primary-1);
+  }
+
+  .ant-dropdown-menu-item {
+    padding: 5px 12px;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-card {
+    .ant-card-head {
+      padding: 0 31px;
+    }
+
+    &.fat-card {
+      .ant-card-head {
+        border: 0;
+
+        .ant-card-head-title,
+        .ant-card-extra {
+          padding: 20px 0 0;
+        }
+
+        .ant-card-head-title,
+        .ant-card-head-title > p {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      .ant-card-body {
+        padding: 22px 31px 29px 31px;
+      }
+    }
+
+    &.thin-card {
+      .ant-card-head {
+        min-height: 36px;
+        border-bottom-color: var(--border-color);
+
+        .ant-card-head-title {
+          padding: 6px 0px;
+        }
+      }
+
+      .ant-card-body {
+        padding: 12px 24px;
+      }
+    }
+  }
+
+  // .ant-card-hoverable:hover {
+  //   box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
+  //   border-color: rgba(0, 0, 0, 0.09);
+  // }
+
+  .ant-select {
+    margin-right: 16px;
+    width: 100px;
+
+    .ant-select-selection {
+      border-radius: 2px;
+    }
+
+    .ant-select-selection__placeholder {
+      font-size: 12px;
+    }
+  }
+
+  .ant-form-item-children .ant-select {
+    margin-right: auto;
+  }
+
+  .ant-progress-bg {
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 1rem 1rem;
+    animation: progress-bar-stripes 1s linear infinite;
+  }
+
+  .ant-table-bordered.ant-table-empty .ant-table-placeholder {
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: transparent;
+  }
+
+  .ant-progress {
+    &.normal .ant-progress-bg {
+      background-color: @processing-color;
+    }
+
+    &.success .ant-progress-bg {
+      background-color: @success-color;
+    }
+
+    &.danger .ant-progress-bg {
+      background-color: @warning-color;
+    }
+
+    &.warning .ant-progress-bg {
+      background-color: @warning-color;
+    }
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 1rem 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

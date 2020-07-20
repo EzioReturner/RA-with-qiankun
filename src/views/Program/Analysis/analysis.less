@@ -1,0 +1,87 @@
+.iconStyle {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.analysis {
+  .titleNanme {
+    position: relative;
+    text-align: left;
+    text-indent: 12px;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 5px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      bottom: 3px;
+      right: 0;
+      left: 0;
+      border-left: 3px solid var(--primary);
+    }
+
+    .iconBar {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      display: flex;
+      .iconStyle;
+
+      .anticon {
+        transition: color 0.3s ease;
+        cursor: pointer;
+        color: var(--text-color);
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .chartDom {
+    height: 300px;
+    width: 100%;
+  }
+
+  .controlHead {
+    margin-bottom: 24px;
+    overflow: auto;
+
+    .ant-card-head {
+      min-width: 580px;
+    }
+
+    .headerContent {
+      display: flex;
+      align-items: center;
+
+      & > i {
+        .iconStyle;
+        margin-right: 8px;
+      }
+    }
+
+    .headerTextSpan {
+      font-size: 13px;
+      font-weight: normal;
+      color: var(--text-color);
+      margin: 0 @spacing-middle 0 @spacing-small;
+
+      &.rightSpace {
+        font-size: 12px;
+
+        i {
+          margin-left: 8px;
+          color: var(--primary);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    font-size: 12px;
+  }
+}

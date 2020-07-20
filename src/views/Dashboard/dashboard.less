@@ -1,0 +1,130 @@
+.dashboard {
+  background: transparent;
+
+  .rowInfo-card .info-card {
+    .top {
+      overflow: hidden;
+
+      .right-part {
+        float: right;
+        text-align: right;
+
+        .title {
+          margin: 5px 0;
+        }
+
+        .num {
+          margin-bottom: 0;
+          font-size: 26px;
+          line-height: 30px;
+        }
+      }
+      i {
+        margin-top: 10px;
+        float: left;
+      }
+    }
+
+    .tips {
+      margin-top: 16px;
+      color: #969696;
+    }
+  }
+  .weather-card {
+    background-image: linear-gradient(to left bottom, #d6eef6, #dff0fa, #e7f3fc, #eff6fe, #f6f9ff);
+    margin-bottom: 24px;
+    height: 460px;
+
+    .weather-body {
+      padding: 31px 29px;
+      height: 347px;
+      background: url('../../assets/image/weather.svg') center center / cover no-repeat;
+    }
+
+    .weather-date-location {
+      padding: 0 0 38px;
+      color: rgba(0, 0, 0, 0.65);
+      h2 {
+        color: rgba(0, 0, 0, 0.85) !important;
+      }
+    }
+
+    .weather-data {
+      padding: 0 0 78px;
+      h1 {
+        color: rgba(0, 0, 0, 0.85) !important;
+      }
+    }
+
+    .weakly-weather {
+      display: flex;
+      background: var(--component-background);
+      min-height: 100px;
+      width: 100%;
+
+      .weakly-weather-item {
+        flex: 0 0 25%;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        min-height: 100px;
+        padding: @spacing-large;
+        color: var(--heading-color);
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  .performance-card {
+    margin-bottom: 24px;
+    height: 460px;
+
+    .headerTitle {
+      font-size: 14px;
+      color: #71669e;
+      margin-bottom: 27px;
+    }
+  }
+
+  .global-trends {
+    margin-bottom: 24px;
+    #chartContaniner {
+      width: 100%;
+      height: 350px;
+    }
+  }
+
+  .text-1 {
+    font-size: 13px;
+  }
+
+  .text-3 {
+    font-size: 40px;
+  }
+
+  .mb-2 {
+    margin-bottom: @spacing-small;
+  }
+
+  .mb-4 {
+    margin-bottom: @spacing-large;
+  }
+
+  .warp-flex {
+    display: flex;
+
+    &.jus-b {
+      justify-content: space-between;
+    }
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  .mt-4 {
+    margin-top: @spacing-large;
+  }
+}

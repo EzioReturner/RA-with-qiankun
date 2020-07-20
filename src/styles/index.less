@@ -1,0 +1,74 @@
+@import './nprogress.less';
+@import './antdStyle.less';
+@import './darkTheme.less';
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+:root,
+body {
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+
+  --primary: @primary-color;
+  --primary-lighten: lighten(@primary-color, 8%);
+  --primary-lightener: lighten(@primary-color, 20%);
+  --primary-lightener-extra: lighten(@primary-color, 35%);
+  --primary-darken: darken(@primary-color, 8%);
+
+  --primary-1: tint(@primary-color, 90%);
+  --primary-2: tint(@primary-color, 80%);
+  --primary-5: tint(@primary-color, 20%);
+
+  --antd-slider-focus: tint(@primary-color, 20%);
+  --antd-slider-active: tint(@primary-color, 50%);
+  --antd-slider-focus-shadow: fade(@primary-color, 12%);
+  --antd-select-focus-shadow: fade(@primary-color, 20%);
+
+  --component-background: #ffffff;
+  --body-background: #f3f3f3;
+  --navigator-background: #ffffff;
+  --popover-background: #ffffff;
+  --text-color: rgba(0, 0, 0, 0.65);
+  --text-color-secondary: rgba(0, 0, 0, 0.45);
+  --heading-color: rgba(0, 0, 0, 0.85);
+  --border-color: #f2f2f2;
+  --shadow-color: rgba(189, 189, 189, 0.6);
+
+  &.darkTheme {
+    --text-color: rgba(255, 255, 255, 0.65);
+    --text-color-secondary: rgba(255, 255, 255, 0.45);
+    --heading-color: rgba(255, 255, 255, 0.85);
+    --body-background: #0c0c0c;
+    --navigator-background: #222222;
+    --popover-background: #2a2a2a;
+    --component-background: #1d1d1d;
+    --border-color: #434343;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,157 @@
+.darkTheme {
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled),
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover,
+  .ant-select-tree .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected,
+  .ant-table-tbody > tr.ant-table-row-selected > td {
+    background-color: fade(#ffffff, 4%);
+  }
+
+  .ant-card-hoverable:hover {
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 1), 0 3px 6px 0 rgba(0, 0, 0, 1),
+      0 5px 12px 4px rgba(0, 0, 0, 1) !important;
+  }
+
+  .ant-message-notice-content {
+    box-shadow: 0 1px 2px -2px #0e0e0e, 0 3px 6px 0 #0e0e0e, 0 5px 12px 4px #0e0e0e !important;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+    background-color: var(--primary-lightener);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end.ant-picker-cell-range-hover::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single).ant-picker-cell-range-hover-start::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single).ant-picker-cell-range-hover-end::before,
+  .ant-picker-panel
+    > :not(.ant-picker-date-panel)
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+  .ant-picker-panel
+    > :not(.ant-picker-date-panel)
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before,
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+    .ant-picker-cell-inner::after,
+  .ant-picker-date-panel
+    .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+    .ant-picker-cell-inner::after {
+    background-color: var(--primary-lighten);
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-in-range {
+    color: @white-color;
+  }
+
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-thead th.ant-table-column-has-sorters:hover,
+  .ant-table-filter-trigger-container-open,
+  .ant-table-filter-trigger-container:hover,
+  .ant-table-thead th.ant-table-column-has-sorters:hover .ant-table-filter-trigger-container:hover,
+  .ant-table-thead th.ant-table-column-has-sorters:hover .ant-table-filter-trigger-container,
+  tr.ant-table-expanded-row > td,
+  tr.ant-table-expanded-row:hover > td {
+    background: var(--popover-background);
+  }
+
+  .ant-dropdown-menu-item.ant-dropdown-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  .ant-menu-item-selected {
+    background-color: var(--primary) !important;
+
+    & > a {
+      color: @white-color !important;
+    }
+  }
+
+  // darktheme popver-background
+  .ant-table-filter-dropdown,
+  .ant-dropdown-menu,
+  .ant-picker-panel-container,
+  .ant-cascader-menus,
+  .ant-select-dropdown,
+  .ant-message-notice-content {
+    background: var(--popover-background);
+  }
+
+  .weather-body {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .ant-tag-processing {
+    background: @processing-color;
+    color: var(--heading-color);
+    border-color: fade(@processing-color, 0.6);
+  }
+
+  .ant-tag-success {
+    background: @success-color;
+    color: var(--heading-color);
+    border-color: fade(@success-color, 0.6);
+  }
+
+  .ant-tag-error {
+    background: @error-color;
+    color: var(--heading-color);
+    border-color: fade(@error-color, 0.6);
+  }
+
+  .ant-tag-warning {
+    background: @warning-color;
+    color: var(--heading-color);
+    border-color: fade(@warning-color, 0.6);
+  }
+
+  .ant-tag-default {
+    color: var(--heading-color);
+  }
+
+  // alert模块未完全适配
+  .ant-alert-error {
+    background: @error-color;
+  }
+
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    );
+  }
+
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after,
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+  .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before {
+    background: linear-gradient(to right, var(--primary), var(--primary));
+  }
+
+  // RA-darkTheme
+  .RA-navigator.RA-navigator-darkTheme {
+    box-shadow: 0px 0px 28px #000000;
+  }
+
+  .RA-menu.RA-menu-darkTheme {
+    background-color: var(--component-background);
+  }
+
+  .RA-userLayout {
+    background-color: #262626;
+  }
+}
