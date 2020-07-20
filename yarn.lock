@@ -10459,10 +10459,10 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
-qiankun@^2.0.14:
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/qiankun/-/qiankun-2.0.14.tgz#32f0d4736b50559d35fdeee131aa96ba90e086b7"
-  integrity sha512-O2AwRggcVnx4PlA3RGUUiO/WDuKgdY1UI8VI40V4imvIcpsAtukVyla8T7E6SlKKv0CbmCd/bXwxacNN0NZ7Lw==
+qiankun@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/qiankun/-/qiankun-2.0.16.tgz#344d2f78a067b20992a2faddf4674c08a7fb8b81"
+  integrity sha512-03ViCIamE9FWw6DaSskiI+32jnefNMlrH+e3uQaSgHFzPsAnJa+9YcU+3lyECnxp2yelQe4w4j9R5hY9CgWXdQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     import-html-entry "^1.7.0"
