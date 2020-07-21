@@ -153,7 +153,7 @@ const SiderMenu: React.FC<{ siderBar?: React.ReactNode; siteLogo?: React.ReactNo
 
   // 生成菜单枝叶
   function getMenuItem(menu: RouteChild, parentName?: string) {
-    const { icon, name, path, search, localeKey } = menu;
+    const { icon, name, path, search, localeKey, type } = menu;
     const localName = localeKey ? localeObj[localeKey] : name;
     return (
       <Link
@@ -161,7 +161,10 @@ const SiderMenu: React.FC<{ siderBar?: React.ReactNode; siteLogo?: React.ReactNo
         replace
         onClick={() => {
           console.log(23333);
-
+          // if (type && type === 'micro') {
+          //   history.pushState(null, path, path);
+          //   return;
+          // }
           handleClickLink();
         }}
       >

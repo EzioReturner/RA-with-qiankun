@@ -11,6 +11,11 @@
     "build:dll": "webpack --config webpack/webpack.dll.js --mode production",
     "test:e2e": "jest -c e2e/jest.config.js",
     "test:unit": "jest -c jest.config.js",
+    "app:install": "npm-run-all --serial build install:*",
+    "install:main": "yarn install",
+    "install:vue": "cd micro/vue && yarn install",
+    "app:start": "npm-run-all --parallel start:*",
+    "start:main": "node scripts/start.js",
     "start:vue": "cd micro/vue && yarn serve"
   },
   "devDependencies": {
@@ -113,6 +118,7 @@
     "mobx-react": "^6.1.4",
     "mockjs": "^1.1.0",
     "moment": "^2.24.0",
+    "npm-run-all": "^4.1.5",
     "nprogress": "^0.2.0",
     "qiankun": "^2.0.16",
     "react": "^16.11.0",

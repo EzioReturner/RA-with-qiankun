@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 /**
  * 渲染子应用
  */
-function Render(props) {
+function Render(props: any) {
   const { loading } = props;
 
   return (
@@ -15,7 +15,7 @@ function Render(props) {
   );
 }
 
-export default function render({ loading }) {
+export default function render({ loading }: { loading: any }) {
   const container = document.getElementById('subapp-container');
   ReactDOM.render(<Render loading={loading} />, container);
 }

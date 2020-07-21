@@ -6,7 +6,6 @@ import { Provider } from 'mobx-react';
 import RenderRoutes from '@components/RenderRoutes';
 import { Store } from '@store/index';
 import '@styles/index.less';
-import './microApp';
 
 const App = () => (
   <Provider {...Store}>

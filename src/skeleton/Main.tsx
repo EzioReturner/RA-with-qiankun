@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import Authorized from '@components/Authorized';
 import { Redirect, useLocation } from 'react-router-dom';
 import LayoutSetting from '@components/LayoutSetting';
@@ -7,7 +7,7 @@ import LayoutStore from '@store/layoutStore';
 import BasicLayout from '@components/Layout/BasicLayout';
 import { getRouteAuthority } from '@utils/authorityTools';
 import Loading from '@components/Loading';
-import { hot } from 'react-hot-loader';
+import register from '../components/Micro/microApp';
 
 const Exception403 = React.lazy(() => import(/* webpackChunkName: "403" */ '@views/Exception/403'));
 
@@ -27,6 +27,10 @@ const MainSkeleton: React.FC<MainSkeletonProps> = props => {
     }
   } = props as InjectProps;
 
+  useEffect(() => {
+    register();
+  }, []);
+
   let location = useLocation();
 
   const { route, children } = props;
@@ -44,7 +48,9 @@ const MainSkeleton: React.FC<MainSkeletonProps> = props => {
         </Suspense>
       }
     >
-      <div className="RA-basicLayout-wrapper-viewMain">{children}</div>
+      <div className="RA-basicLayout-wrapper-viewMain" id="subapp-container">
+        {children}
+      </div>
     </Authorized>
   );
 
