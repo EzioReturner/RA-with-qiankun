@@ -1,4 +1,4 @@
-const { name } = require('./package');
+const { name: packageName } = require('./package');
 const path = require('path');
 
 function resolve(dir) {
@@ -35,9 +35,9 @@ module.exports = {
     },
     output: {
       // 把子应用打包成 umd 库格式
-      library: `${name}-[name]`,
+      library: `${packageName}-[name]`,
       libraryTarget: 'umd',
-      jsonpFunction: `webpackJsonp_${name}`
+      jsonpFunction: `webpackJsonp_${packageName}`
     }
   }
 };
